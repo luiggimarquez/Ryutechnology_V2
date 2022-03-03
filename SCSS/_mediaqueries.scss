@@ -1,0 +1,337 @@
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+ 
+    .header {
+        .alineadorLogo {
+            h1 {
+
+                padding: 29px 0 24px 0;
+                font-size: 25px;
+                font-size: 43px;
+            }
+        }
+
+        
+    }
+    .productos {
+
+        .alineacionProductos {
+
+            .contenedorFlex {
+
+                .item1 {
+
+                    width: 30%;
+                }
+            }
+        }
+    }
+}// fin media queria 1200px
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+
+    .header {
+        .alineadorLogo {
+            h1 {
+
+                padding: 29px 0 24px 0;
+                font-size: 25px;
+            }
+        }
+   
+
+        .alineadorMenu{
+
+            
+
+            .menuNav a{
+
+                padding: 0 15px; 
+            }
+        }
+    }
+    .productos {
+
+        .alineacionProductos {
+
+            .contenedorFlex {
+
+
+                .item1 {
+
+                    width: 33%;
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}// fin media queria 1024px
+
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+
+    .header{
+
+        flex-direction: column;
+
+        .burger{
+
+            display:inline;
+        }
+
+        .burger.active .bar:nth-child(2){
+
+            opacity: 0;
+        }
+        .burger.active .bar:nth-child(1){
+
+            transform: translateY(8px) rotate(45deg);
+        }
+        .burger.active .bar:nth-child(3){
+
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .alineacionBurger{
+
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .alineadorLogo {
+
+            width: 100%;
+            justify-content: center;
+           
+            h1 {
+                padding: 29px 0 24px 0;
+                font-size: 40px;
+            }
+        }
+   
+        .iconResponsive{
+   
+            display: inline;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 0;
+            top: 0;
+            margin: 33px;
+            box-shadow: 0px 0px 8px 0px rgb(255, 255, 255);
+            border-radius: 3px;
+           
+        }
+
+        .alineadorMenu{
+  
+            text-align: center;
+            width: 100%;
+
+            .menuNav{
+
+               position: fixed;
+               left: -100%;
+               top: 143px;
+               flex-direction: column;
+               width: 100%;
+               text-align: center;
+               transition: 0.3s;
+               background-color: rgba(0, 0, 0, 0.966);
+
+                li {
+
+                    padding: 10px 0;
+                    margin: 16px 0;
+
+                    a{
+                        padding: 10px 0;
+                    }
+                }
+            }
+
+            .menuNav.active{
+
+                left:0;
+            }
+        }
+    }
+   
+    .productos {
+
+        .tituloProductos{
+
+            margin-top: 150px;
+            color:black;
+            background-color: white;
+            border-top: none;
+            border-bottom: none;
+            
+        }
+        .alineacionProductos {
+
+            flex-direction: column;
+
+            .asideProductos{
+
+                width: 100%;
+
+            }
+
+            .contenedorFlex {
+
+                width: 100%;
+
+                .item1 {
+
+                    width: 49%;
+                    padding: 12px;
+                }
+            }
+        }
+    }
+
+    .contenedorMenuFooter{
+
+        .menuNavFooter{
+
+            display:none;
+            transition: 10.3s;
+        }
+
+        .menuNavFooter.active{
+
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+
+    .footerPrincipal .footerAlineacion .contenedorMenuFooter li {
+
+        margin: 7px;
+    }
+
+    .burgerFooter{
+
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .burgerFooter.active .bar:nth-child(2) {
+
+        opacity: 0;
+    }
+
+    .burgerFooter.active .bar:nth-child(1) {
+
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burgerFooter.active .bar:nth-child(3) {
+
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width: 480px) {
+
+    .header {
+
+        .alineadorLogo {
+
+            h1 {
+                    padding: 29px 0 24px 0;
+                    font-size: 25px;
+            }
+        }
+    
+
+        .alineadorMenu{
+
+            .menuNav a{
+
+                    padding: 0 15px; 
+            }
+        }
+    }
+
+    .productos {
+
+        .alineacionProductos {
+
+                flex-direction: column;
+
+                .asideProductos{
+
+                    width: 100%;
+
+                }
+
+                .contenedorFlex {
+
+                    width: 100%;
+
+                    .item1 {
+
+                        width: 90%;
+                        padding: 12px;
+                        margin-top: 10px;
+                    }
+                }
+        }
+    }
+    
+}// fin media query 481px
+
+
+@media screen and (max-width: 319px) {
+
+    .header {
+
+        .alineadorLogo {
+
+            h1 {
+                padding: 29px 0 24px 0;
+                font-size: 25px;
+            }
+        }
+   
+
+        .alineadorMenu{
+
+            .menuNav a{
+
+                padding: 0 15px; 
+            }
+        }
+    }
+    .productos {
+
+        .alineacionProductos {
+
+            flex-direction: column;
+
+            .asideProductos{
+
+                width: 100%;
+
+            }
+
+            .contenedorFlex {
+
+                width: 100%;
+
+                .item1 {
+
+                    width: 90%;
+                    padding: 12px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}// fin media query 319px

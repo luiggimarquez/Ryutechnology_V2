@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Declaracion del favicon-->
+    <link rel="icon" type="image/png" href="./img/favicon.ico"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="../img/favicon.ico">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Ryu Tech | Contacto</title>
+</head>
+
+<body id="cierreCanvas">
+
+    <header class="header">
+
+        <div class="alineadorLogo">
+
+            <a href="../index.html">
+            <img src="../img/logo1.png"  alt="Logo Empresa" class="logoHeader"></a>
+            <h1>RYU TECHNOLOGY</h1>
+
+        </div>
+
+        <div class="alineadorMenu">
+
+            <ul class="menuNav">
+                    
+                <li><a href="../index.html#empresaID">Empresa</a></li>
+                <li><a href="../index.html#partnerID">Partners</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li> <a href="#">Contacto</a></li>
+                   
+            </ul>
+
+        </div>
+
+        <div class=alineacionBurger>
+            <div class="burger">
+                <span class="bar"></span>
+
+                <span class="bar"></span>
+
+                <span class="bar"></span>
+            </div>
+
+            <!-- <span id="carritoActivo" class="openbtn">&#9776; Cart</span> -->
+        </div>
+
+    </header>
+    
+
+    
+
+    <section class="alineadorContacto">
+
+        <div class="mapaContacto flexContacto">
+
+            <div class="mapaIframe flexContacto">
+
+                <!--iframe del mapa con la dirección fisica de la empresa-->
+                <iframe class="rounded border border-5" defer src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285
+                .4412396612443!2d-58.439932784237776!3d-34.56770026310128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0
+                x95bcb5b8dd751b6d%3A0xd392619e9e5bb108!2sAv.%20Luis%20Mar%C3%ADa%20Campos%20935%2C%20C1426BOH%20CABA!5e0!3m2!
+                1ses!2sar!4v1642096229276!5m2!1ses!2sar"width="600" height="450" style="border: 1px;" title="Localizacion Ryu
+                 Tech" allowfullscreen=""></iframe>
+            
+            </div>
+
+            <div class="mapaDatos flexContacto">
+
+                <div class="transicionUno">
+
+                    <img class="fondoTexto" src="../img/img-1.png" alt="imagen de fondo para texto">
+
+                </div>
+
+                <div class="transicionDos">
+
+                    <img class="fondoTexto2" src="../img/img-2.png" alt="imagen de fondo para texto">
+
+                </div>
+
+                <div class="transicionTexto">
+
+                    <div class="AlineacionDatos">
+                            
+                        <h3>Dirección:</h3> 
+                        <p>Avenida Luis María Campos 935, Palermo, C.A.B.A - Argentina</p>
+                            
+                    </div>
+
+                    <div class="AlineacionDatos">
+                            
+                        <h3 >Teléfono:</h3>
+                        <p>+54 9 11 12345678</p>
+                            
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- formulario para toma de datos de los clientes-->
+        <form class="formularioContacto" id="formContacto">
+
+            <input type="text" placeholder="Nombre" name="name" required >
+            <input type="text" placeholder="Apellido" name="surname" required>
+            <input type="tel" placeholder="Teléfono" name="phone" required>
+            <input type="email" placeholder="Mail" name="mail" required>
+            <textarea placeholder="Escribe tu Consulta" maxlength="1000" name="textarea" required></textarea>
+            <button type="submit">Enviar</button>
+            <input type="reset" value="Restablecer">
+
+        </form>
+  
+    </section> <!-- Cierre de la Sección contacto-->
+
+
+    <footer class="footerPrincipal">
+
+        <h3>Contacto</h3>
+
+        <div class="footerAlineacion"> <!--Este DIV es contenerdor del menu, logos y direccion, para agrugarlos y alinearlos-->
+
+            <!--Menu  de navegación-->
+
+            <div class="contenedorMenuFooter">
+
+                <div class="alineacionBurger2">
+                    <div class="burgerFooter">
+                        <span class="bar"></span>
+        
+                        <span class="bar"></span>
+        
+                        <span class="bar"></span>
+                    </div>
+                </div>
+           
+                <ul class="menuNavFooter">
+
+                    <li><a  class="navLinkFooter" href="../index.html">Home</a></li>
+                    <li><a  class="navLinkFooter" href="../index.html#empresaID">Empresa</a></li>
+                    <li><a  class="navLinkFooter" href="../index.html#partnerID">Partners</a></li>
+                    <li><a  class="navLinkFooter" href="./productos.html">Productos</a></li>
+                    <li><a  class="navLinkFooter" href="#">Contacto</a></li>
+  
+                </ul>
+
+                
+
+            </div>
+
+                
+            <div class="contenedorImagenesFooter"><!-- DIV contenedor para Imágenes del footer-->
+                
+                <!--Logo de la empresa con acceso directo al index.html-->
+                <div class="contenedorLogo">
+
+                    <a href="../index.html">
+
+                        <img src="../img/logo.png" width="120px" alt="Vinculo a Home">
+                    </a>
+
+                </div>
+
+                <!--Logo con acceso a las redes sociales-->
+                <div class="contenedorRrss">
+
+                    <a href="http://www.instagram.com" target="_blank" rel="noreferrer">
+                        <img src="../img/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="http://www.twitter.com" target="_blank" rel="noreferrer">
+                        <img src="../img/twitter.png" alt="Twitter">
+                    </a>
+
+                    <a href="http://www.facebook.com" target="_blank" rel="noreferrer">
+                        <img src="../img/facebook.svg" alt="Facebook">
+                    </a>
+
+                </div>
+
+            </div><!--cierre DIV contenedor Imágenes footer-->
+
+            <!--Dirección y teléfono de la empresa-->
+            <div class="contenedorDireccionFooter">
+
+                <h4 class="estiloTitulos">Dirección</h4>
+
+                <p>Avenida Luis María Campos 935, Palermo, C.A.B.A - Argentina</p>
+                
+                <h4 class="estiloTitulos">Teléfono</h4>
+
+                <p>+54 9 11 12345678</p>
+                
+            </div>
+
+        </div> <!--cierre DIV contenerdor del menu-->
+
+        <h4 class="estiloTitulos"> © Ryu Technology | All rigths reserved 2022</h4>
+        
+    </footer>
+
+    
+    <script src="../js/components/menu/bugerMenu.js"></script>  
+
+</body>
+</html>

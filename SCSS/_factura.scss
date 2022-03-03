@@ -1,0 +1,146 @@
+.alineador{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding-top: 38px;
+}
+
+.contenedorFactura{
+
+    display: flex;
+    width: 70%;
+    background-color: #b7ffd9bd;;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    .alineacionTituloFactura{
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid black;
+        background-color: black;
+        color: snow;
+
+        h2{
+
+            font-size: 3rem;
+        }
+    }
+
+    .alineadorDatosFactura{
+
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        width: 100%;
+        align-items: center;
+
+        p{
+            font-size: x-large;
+            padding: 10px 0;
+            border: 1px solid black;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+
+    .carritoFactura{
+
+        display:flex;
+        width: 100%;
+        border: 2px solid black;
+        padding: 40px;
+        flex-direction: column;
+
+        .alineacionTituloCarrito {
+
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+
+                padding-bottom: 30px;
+            }
+
+            .alineacionsubtitulos {
+
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                align-items: center;
+
+                p {
+                    font-weight: 900;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .alineaFinal {
+
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .nombreContainer {
+
+                flex-direction: column;
+                display: flex;
+                width: 33%;
+                align-content: space-around;
+                align-self: center;
+                flex-wrap: wrap;
+            }
+
+            .cantidadContainer {
+                flex-direction: column;
+                display: flex;
+                width: 33%;
+                align-content: space-around;
+                align-self: center;
+                flex-wrap: wrap;
+            }
+
+            .precioContainer {
+                flex-direction: column;
+                display: flex;
+                width: 33%;
+                align-content: space-around;
+                align-self: center;
+                flex-wrap: wrap;
+            }
+
+        }
+
+    }
+
+    .monto .carritoDatosFactura {
+
+        display: flex;
+        width: 100%;
+        border: 2px solid black;
+        padding: 40px;
+        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        
+        p {
+            padding: 8px;
+            color: black;
+            width: fit-content;
+            justify-content: end;
+            display: flex;
+            align-items: center;
+            font-weight: 900;
+        }
+    }
+
+}

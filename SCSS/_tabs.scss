@@ -1,0 +1,168 @@
+.tab {
+
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #000000;
+
+    & button{
+
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: snow;
+    }
+    
+    & button:hover {
+
+        background-color: #ddd;
+    }
+
+    & button.active {
+
+        background-color: rgb(189, 173, 173);
+    }
+
+}
+  
+.partners{
+
+    background-image: url(../img/fondo2.jpg); 
+
+
+    .contenidoTab {
+
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        animation: fadeEffect 1s;
+    }
+    
+    
+    @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    
+
+    p{
+
+        text-align: center;
+        color: #000000;
+        font-size: larger;
+        line-height: 40px;
+        
+    }
+    
+}
+
+#titlePartners{
+
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: snow;
+}
+
+.imgBorder{ //imagenes dentro del tab de Partners
+
+    border-radius: 200px;
+    max-width:300px;
+    max-height:300px;
+}
+
+.imgLogos{
+
+    width: 100%;
+    max-width: 200px;
+}
+.alineacionPartner{ /* Agrupación de imagen y texto para cada categoría de los 4 elementos principales en partners.hmtl*/
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 40%;
+
+    h3{
+        width: fit-content;
+        padding: 0 3rem 0 3rem;
+        margin-top: 1rem;
+    }
+}
+
+
+.flexPartner{ /* contenedor Flebox para los cuatro elementos de seccionPrincipalGeneral2 en partners.html*/
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;  
+    width: 100%;
+
+    p{
+        width:40%; 
+        align-self: flex-start;
+        margin: 50px 0 30px 0;
+    }
+
+    img{
+
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.partnersID {
+
+    height: 100px;
+}
+
+.grid{
+
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    width: 100%;
+    place-items: center;
+}
+
+.gridUno{
+
+    grid-area: 2/2/3/3;
+    
+}
+.gridDos{
+
+    grid-area: 2/3/3/4;
+}
+.gridTres{
+
+    grid-area: 2/4/3/5;
+}
+.gridCuatro{
+
+    grid-area: 2/5/3/6;
+}
+.gridCinco{
+
+    grid-area: 3/2/4/3;
+}
+.gridSeis{
+
+    grid-area: 3/3/4/4;
+}
+.gridSiete{
+
+    grid-area: 3/4/4/5;
+}
+.gridOcho{
+
+    grid-area: 3/5/4/6;
+}

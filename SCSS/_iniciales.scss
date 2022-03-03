@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    
+    font-family: 'Anurati Normal'; //fuente para el título principal del sitio, H1
+    src: url("../fuente/Anurati-Regular.woff") format('woff');
+    font-display: swap;
+}
+
+body{
+
+    background-color: rgb(255, 255, 255);
+}

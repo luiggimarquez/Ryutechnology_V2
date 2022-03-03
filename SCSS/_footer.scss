@@ -1,0 +1,123 @@
+.footerPrincipal{
+
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+
+    h3 , h4{
+
+        color: $textoBlanco;
+        text-align: center;
+        padding: 5px 0;
+    
+    }
+    .estiloTitulos{
+
+        border-top: 1px solid #dee2e6;
+        padding: 5px 0;
+    
+    }
+
+    .footerAlineacion{ /*Alineacion de los bloques del footer uno a lado de otro*/
+
+        display:flex;
+        justify-content: center;
+
+        .contenedorMenuFooter{ /*ubicacion del menú de navegacion del footer del Index a la izquierda*/
+
+            width:20%;
+            text-align: center;
+
+            a{ /*Quita el estilo de los link de los menu y da color de*/
+        
+                text-decoration: none;
+                color:$textoBlanco;
+            }
+
+            a:hover{
+        
+                color:$hovers;
+            }
+
+            li{ /*Estilos para el menu de nav*/
+        
+                list-style-type:none;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 7px 0;   
+            }
+
+            
+
+                
+        } 
+    }//cierre footerAlineacion
+
+    
+    .contenedorImagenesFooter{ /* Contenedor para alienar las imagenes del logo y RRSS*/
+            
+        display: flex;
+        width:60%;
+        flex-direction: column;
+    }
+    
+    .contenedorLogo{  /* Alineación del logo e imágenes de RRSS */
+    
+        display:flex;
+        justify-content: center;
+
+        img{
+            transition: 0.5s;
+            &:hover{
+    
+                transform: scale(1.15);
+                opacity: 85%;
+            }
+            
+        }
+    }
+    
+    .contenedorRrss{
+    
+        @extend .contenedorLogo;
+    }
+    
+    .contenedorRrss img{ /*espacio de separacion entre logos de rrss*/
+        
+        padding: 5px;
+        height: 50px;
+        width:50px;
+        transition: 0.5s;
+         
+        // &:hover{
+    
+        //     transform: scale(1.15);
+        //     opacity: 85%;
+        // }
+    }
+    
+    .contenedorDireccionFooter{
+        
+        width: 20%;
+    
+        p{
+            color: $textoBlanco;
+            font-size: 14px;
+            margin: 5px;
+            text-align: center;
+        }
+    }
+
+
+}
+
+
+.burgerFooter{
+
+    display: none;
+    cursor: pointer;
+}
+
+
+
+

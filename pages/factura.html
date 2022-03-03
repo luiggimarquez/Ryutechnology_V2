@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Declaracion del favicon-->
+    <link rel="icon" type="image/png" href="../img/favicon.ico"/>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="../img/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src='https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js'></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Ryu Tech | Factura</title>
+</head>
+
+<body id="cierreCanvas">
+
+    <header class="header">
+
+        <div class="alineadorLogo">
+
+            <a href="../index.html">
+            <img src="../img/logo1.png"  alt="Logo Empresa" class="logoHeader"></a>
+            <h1>RYU TECHNOLOGY</h1>
+
+        </div>
+
+        
+        <div class="alineadorMenu">
+
+            <ul class="menuNav">
+                    
+                <li><a href="../index.html#empresaID">Empresa</a></li>
+                <li><a href="../index.html#partnerID">Partners</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class=alineacionBurger>
+            <div class="burger">
+                <span class="bar"></span>
+
+                <span class="bar"></span>
+
+                <span class="bar"></span>
+            </div>
+
+            
+        </div>
+
+    </header>
+
+
+    <div class="alineador">
+
+        <div class="contenedorFactura" id="contenedorFactura"></div>
+
+    </div>
+
+    
+   <footer class="footerPrincipal" >
+
+        <h3>Contacto</h3>
+
+        <div class="footerAlineacion"> <!--Este DIV es contenerdor del menu, logos y direccion, para agrugarlos y alinearlos-->
+
+            <!--Menu  de navegación-->
+
+            <div class="contenedorMenuFooter">
+
+                <div class="alineacionBurger2">
+                    <div class="burgerFooter">
+                        <span class="bar"></span>
+        
+                        <span class="bar"></span>
+        
+                        <span class="bar"></span>
+                    </div>
+                </div>
+           
+                <ul class="menuNavFooter">
+
+                    <li><a  class="navLinkFooter" href="../index.html">Home</a></li>
+                    <li><a  class="navLinkFooter" href="../index.html#empresaID">Empresa</a></li>
+                    <li><a  class="navLinkFooter" href="../index.html#partnerID">Partners</a></li>
+                    <li><a  class="navLinkFooter" href="./productos.html">Productos</a></li>
+                    <li><a  class="navLinkFooter" href="./contacto.html">Contacto</a></li>
+  
+                </ul>
+
+                
+
+            </div>
+
+                
+            <div class="contenedorImagenesFooter"><!-- DIV contenedor para Imágenes del footer-->
+                
+                <!--Logo de la empresa con acceso directo al index.html-->
+                <div class="contenedorLogo">
+
+                    <a href="./index.html">
+
+                        <img src="../img/logo.png" width="120px" alt="Vinculo a Home">
+                    </a>
+
+                </div>
+
+                <!--Logo con acceso a las redes sociales-->
+                <div class="contenedorRrss">
+
+                    <a href="http://www.instagram.com" target="_blank" rel="noreferrer">
+                        <img src="../img/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="http://www.twitter.com" target="_blank" rel="noreferrer">
+                        <img src="../img/twitter.png" alt="Twitter">
+                    </a>
+
+                    <a href="http://www.facebook.com" target="_blank" rel="noreferrer">
+                        <img src="../img/facebook.svg" alt="Facebook">
+                    </a>
+
+                </div>
+
+            </div><!--cierre DIV contenedor Imágenes footer-->
+
+            <!--Dirección y teléfono de la empresa-->
+            <div class="contenedorDireccionFooter">
+
+                <h4 class="estiloTitulos">Dirección</h4>
+
+                <p>Avenida Luis María Campos 935, Palermo, C.A.B.A - Argentina</p>
+                
+                <h4 class="estiloTitulos">Teléfono</h4>
+
+                <p>+54 9 11 12345678</p>
+                
+            </div>
+
+        </div> <!--cierre DIV contenerdor del menu-->
+
+        <h4 class="estiloTitulos"> © Ryu Technology | All rigths reserved 2021</h4>
+        
+    </footer>
+    
+    <script type="module" src="../js/components/menu/bugerMenu.js"></script>
+    <script type="module" src="../js/components/invoice/invoice.js"></script>
+
+</body>
+</html>
