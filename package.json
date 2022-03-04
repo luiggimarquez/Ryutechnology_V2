@@ -1,28 +1,26 @@
 {
-  "name": "desafio_8",
+  "name": "ryutechnology",
   "version": "1.0.0",
-  "description": "Desafio Fetch y asincronismo",
+  "description": "Proyecto de Ecommerce con JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luiggimarquez/desafio_8.git"
+    "url": "git+https://github.com/luiggimarquez/Ryutechnology_V2.git"
   },
   "author": "Luiggi Marquez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luiggimarquez/desafio_8/issues"
+    "url": "https://github.com/luiggimarquez/Ryutechnology_V2/issues"
   },
-  "homepage": "https://github.com/luiggimarquez/desafio_8#readme",
+  "homepage": "https://github.com/luiggimarquez/Ryutechnology_V2#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "@github/check-all": "^0.4.0"
   }
 }
