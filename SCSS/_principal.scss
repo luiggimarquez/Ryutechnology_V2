@@ -33,18 +33,78 @@
         transform: translateY(-8px);
     }
 
-    li {
+    // li {
        
-        background-color: black;
-        align-self: baseline;
-        padding: 10px;
-        border-left: 1px double blue;
-        width: 100%;
-        color: snow;
+    //     background-color: black;
+    //     align-self: baseline;
+    //     padding: 10px;
+    //     border-left: 1px double blue;
+    //     width: 100%;
+    //     color: snow;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    // }
+
+    .titulosCarrito{
+
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-self: center;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid white;
+
+        p {
+
+            font-size: 18px;
+            font-weight: 900;
+            background: black;
+            color: white;
+            width: 100%;
+            
+        }
+        
     }
+
+    .articulosCarrito {
+
+
+        display: flex;
+        width: 100%;
+        background: black;
+
+        p{
+
+            align-items: center;
+            padding: 10px 0px;
+            font-size: 18px;
+            font-weight: 900;
+            color: white;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            
+            
+        }
+        
+        .botonBin {
+
+            width: 7%;
+            transition: 0.3s;
+            padding: 11px 6px;
+            overflow: hidden;
+        }
+
+        .botonBin:hover {
+  
+            box-shadow: 0 2px #666;
+            transform: translateY(-1px);
+        }
+
+
+        
+    }
+
 }
 
 .carritoDatos{
@@ -56,6 +116,7 @@
         color:snow;
         background-color: black;
         width: 90%;
+        text-align: end;
 
     }
 }
@@ -160,6 +221,24 @@
             top: 0;
             left: 0;
 
+            .burgerFiltro{
+
+                display: none;
+                cursor: pointer;
+
+                .bar2{
+            
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px auto;
+                    transition: all 0.3s ease-in-out;
+                    background-color: white;
+                }
+            }
+            
+            
+
             .filtro{
 
                 position: relative;
@@ -242,7 +321,6 @@
                         margin: 5px 5px 5px 15px;
                         box-shadow: 0 2px #999;
                         font-size:medium;
-                        transform: translateY(-3px);
                         transition: 0.1s;
                        
 

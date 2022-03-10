@@ -10,9 +10,10 @@ burger.addEventListener("click", () => {
 
 })
 
-document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click",() =>{
+document.querySelectorAll(".menuNav").forEach(n => n.addEventListener("click",() =>{
 
     burger.classList.remove("active")
+    menuNav.classList.remove("active")
 }))
 
 
@@ -28,7 +29,8 @@ burgerFooter.addEventListener("click", () => {
     
 })
 
-document.querySelectorAll(".navLinkFooter").forEach(n => n.addEventListener("click",() =>{
+document.querySelectorAll(".menuNavFooter").forEach(n => n.addEventListener("click",() =>{
 
-    burgerFooter.classList.remove("active")
+    burgerFooter.classList.remove("active");
+    menuNavFooter.classList.remove("active");
 }))

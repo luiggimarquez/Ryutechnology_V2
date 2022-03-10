@@ -68,50 +68,60 @@
             <div class="search">
                 <input type="text" id="mySearch" placeholder="Search.." title="Escribe una palabra a buscar">
             </div>    <!-- <button id="busqueda">busqueda</button> -->
-    
-            <div class="filtro">
+            
+            <div class="burgerFiltro">
 
-                
+                <span class="bar2"></span>
 
-                <h3>Filtrar</h3>
-                
+                <span class="bar2"></span>
 
-                <h4>Marca</h4>
-                
-                <div class="alineacionCheckbox"><input type="checkbox" name="axis" value="Axis" id="check1" class="filtro"><label for="axis">Axis</label></div>
-                <div class="alineacionCheckbox"><input type="checkbox" name="cisco" value="Cisco" id="check2" class="filtro"><label for="cisco">Cisco</label></div>
-                <div class="alineacionCheckbox"><input type="checkbox" name="sonicwall" value="Sonicwall" id="check3" class="filtro"><label for="sonicwall">Sonicwall</label></div>
-                
-
-                <h4>Tipo</h4>
-        
-                <div class="alineacionCheckbox"> <input type="checkbox" name="switch" value="Switch" id="check4" class="filtro"><label>Switch</label></div>
-                <div class="alineacionCheckbox"><input type="checkbox" name="router" value="Router" id="check5" class="filtro"><label>Router</label></div>
-                <div class="alineacionCheckbox"><input type="checkbox" name="firewall" value="Firewall" id="check11" class="filtro"><label>Firewall</label></div>
-
-                <div data-check-all-container>
-
-                    <ul><input type="checkbox" name="camaras" value="" id="check6" class="filtro" data-check-all><label>Cámaras</label>
-
-                        <li><input type="checkbox" name="camaras" value="Bullet" id="check7" class="filtro" data-check-all-item>Bullet</li>
-                        <li><input type="checkbox" name="camaras" value="Térmica" id="check8" class="filtro" data-check-all-item>Térmicas</li>
-                        <li><input type="checkbox" name="camaras" value="Panorámica" id="check9" class="filtro" data-check-all-item>Panorámicas</li>
-                        <li><input type="checkbox" name="camaras" value="PTZ" id="check10" class="filtro" data-check-all-item>PTZ</li>
-                    </ul>
-                </div>
-
-                <div class="sliderContainer" id="sliderContainer">
-
-                    <!-- <input type="checkbox" name="rango" value="" id="check11" class="filtro" > -->
-                    <input type="range" min="500" max="5000" value="5000" class="slider filtro" id="rango">
-                    <p>Value: <span id="valor"></span></p>
-    
-                </div>
-
+                <span class="bar2"></span>
 
             </div>
+    
+            <div class="containerFiltro">
+                
+                <div class="filtro">
 
+                    <h3>Filtrar</h3>
+                    
+
+                    <h4>Marca</h4>
+                    
+                    <div class="alineacionCheckbox"><input type="checkbox" name="axis" value="Axis" id="check1" class="filtro"><label for="axis">Axis</label></div>
+                    <div class="alineacionCheckbox"><input type="checkbox" name="cisco" value="Cisco" id="check2" class="filtro"><label for="cisco">Cisco</label></div>
+                    <div class="alineacionCheckbox"><input type="checkbox" name="sonicwall" value="Sonicwall" id="check3" class="filtro"><label for="sonicwall">Sonicwall</label></div>
+                    
+
+                    <h4>Tipo</h4>
             
+                    <div class="alineacionCheckbox"> <input type="checkbox" name="switch" value="Switch" id="check4" class="filtro"><label>Switch</label></div>
+                    <div class="alineacionCheckbox"><input type="checkbox" name="router" value="Router" id="check5" class="filtro"><label>Router</label></div>
+                    <div class="alineacionCheckbox"><input type="checkbox" name="firewall" value="Firewall" id="check11" class="filtro"><label>Firewall</label></div>
+
+                    <div data-check-all-container>
+
+                        <ul><input type="checkbox" name="camaras" value="" id="check6" class="filtro" data-check-all><label>Cámaras</label>
+
+                            <li><input type="checkbox" name="camaras" value="Bullet" id="check7" class="filtro" data-check-all-item>Bullet</li>
+                            <li><input type="checkbox" name="camaras" value="Térmica" id="check8" class="filtro" data-check-all-item>Térmicas</li>
+                            <li><input type="checkbox" name="camaras" value="Panorámica" id="check9" class="filtro" data-check-all-item>Panorámicas</li>
+                            <li><input type="checkbox" name="camaras" value="PTZ" id="check10" class="filtro" data-check-all-item>PTZ</li>
+                        </ul>
+                    </div>
+
+                    <div class="sliderContainer" id="sliderContainer">
+
+                        <!-- <input type="checkbox" name="rango" value="" id="check11" class="filtro" > -->
+                        <input type="range" min="500" max="5000" value="5000" class="slider filtro" id="rango">
+                        <p>Value: <span id="valor"></span></p>
+        
+                    </div>
+
+
+                </div>
+
+            </div>
 
 
         </aside>
@@ -236,6 +246,7 @@
     <script type="module" src="../js/components/menu/bugerMenu.js"></script>
     <script type="module" src="../js/components/cart/imprimirCarrito.js"></script>
     <script type="module" src="../js/components/menu/modal.js"></script>
+    <script type="module" src="../js/components/menu/modalFiltros.js"></script>
     <script type="module" src="../js/components/cart/vaciarCarrito.js"></script>
     <script type="module" src="../js/components/menu/roundRange.js"></script>
     <script type="module" src="../js/components/cart/pagoCarrito.js"></script>

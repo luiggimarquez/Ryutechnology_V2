@@ -17,16 +17,30 @@ export default function imprimirCarrito(contenidoCarrito){
             padre.innerHTML =[];
             let carritoImpresion = document.createElement("div");
             carritoImpresion.className="carrito";
-            carritoImpresion.innerHTML =`<div class="alienacionCarrito" id="quitar"><img src="../img/logo1.png" alt="Logo Empresa" class="logoCart"> <h2>Artículos del Carrito</h2> <div class="agruparIconosCarrito">
-            <button class="button" id="procesarPago"> − Procesar Pago − </button> <div class="label"><img id="vaciar" src="../img/vaciar.png" alt="vaciar carrito" class="logoVaciar"><label>Vaciar</label></div> </div>
-            </div>`;
+            carritoImpresion.innerHTML =`
+
+            <div class="alienacionCarrito" id="quitar">
+                <img src="../img/logo1.png" alt="Logo Empresa" class="logoCart"> <h2>Artículos del Carrito</h2>
+
+                <div class="agruparIconosCarrito">
+                    <button class="button" id="procesarPago"> − Procesar Pago − </button>
+
+                    <div class="label">
+                        <img id="vaciar" src="../img/vaciar.png" alt="vaciar carrito" class="logoVaciar"><label>Vaciar</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="titulosCarrito"><p>Producto</p><p>Cantidad</p><p>Precio</p></div>`;
+
             padre.insertAdjacentElement("beforeend", carritoImpresion);
 
             for(let elementoCarrito of contenidoCarrito){
 
-                let li = document.createElement("li");
-                li.innerHTML = `ID: ${elementoCarrito.id2} <span>&#x21D2</span> &#x2002 Producto: ${elementoCarrito.nombre} &#x2002 &#x2002 Agregados:   ${elementoCarrito.comprados} &#x2002 &#x2002 Precio: ${elementoCarrito.precio} &#x2002 <img src="../img/bin.png" class="botonBin" id="tag${elementoCarrito.id2}">`;
-                carritoImpresion.insertAdjacentElement("beforeend", li);
+                let article = document.createElement("div");
+                article.className ="articulosCarrito";
+                article.innerHTML = `<p> ${elementoCarrito.nombre}</p> <p>${elementoCarrito.comprados}</p> <p>${elementoCarrito.precio} $ </p> <img src="../img/bin.png" class="botonBin" id="tag${elementoCarrito.id2}">`;
+                carritoImpresion.insertAdjacentElement("beforeend", article);
                 
                 let quitarArticulo = document.getElementById(`tag${elementoCarrito.id2}`);
                 quitarArticulo.addEventListener("click",() =>{
