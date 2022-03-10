@@ -39,7 +39,7 @@ export default function imprimirCarrito(contenidoCarrito){
 
                 let article = document.createElement("div");
                 article.className ="articulosCarrito";
-                article.innerHTML = `<p> ${elementoCarrito.nombre}</p> <p>${elementoCarrito.comprados}</p> <p>${elementoCarrito.precio} $ </p> <img src="../img/bin.png" class="botonBin" id="tag${elementoCarrito.id2}">`;
+                article.innerHTML = `<p>${elementoCarrito.nombre}</p> <p>${elementoCarrito.comprados}</p> <p>${elementoCarrito.precio} $ </p> <img src="../img/bin.png" class="botonBin" id="tag${elementoCarrito.id2}">`;
                 carritoImpresion.insertAdjacentElement("beforeend", article);
                 
                 let quitarArticulo = document.getElementById(`tag${elementoCarrito.id2}`);
