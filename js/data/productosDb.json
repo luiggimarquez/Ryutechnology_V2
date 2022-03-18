@@ -1,6 +1,6 @@
 [{
     "id": "1",
-    "nombre": "m1065",
+    "nombre": "M1065",
     "tipo": "Bullet",
     "marca": "Axis",
     "precio": 1200,
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "nombre": "m1134",
+    "nombre": "M1134",
     "marca": "Axis",
     "tipo": "Bullet",
     "precio": 1500,
@@ -18,7 +18,7 @@
   },
   {
     "id": "3",
-    "nombre": "m1137",
+    "nombre": "M1137",
     "tipo": "Bullet",
     "marca": "Axis",
     "precio": 1000,
@@ -27,7 +27,7 @@
   },
   {
     "id": "4",
-    "nombre": "p1375",
+    "nombre": "P1375",
     "tipo": "Bullet",
     "marca": "Axis",
     "precio": 1000,
@@ -36,7 +36,7 @@
   },
   {
     "id": "5",
-    "nombre": "m3058",
+    "nombre": "M3058",
     "tipo": "Panorámica",
     "marca": "Axis",
     "precio": 1200,
@@ -45,7 +45,7 @@
   },
   {
     "id": "6",
-    "nombre": "p38",
+    "nombre": "P38",
     "tipo": "Panorámica",
     "marca": "Axis",
     "precio": 1000,
@@ -54,7 +54,7 @@
   },
   {
     "id": "7",
-    "nombre": "p3717",
+    "nombre": "P3717",
     "tipo": "Panorámica",
     "marca": "Axis",
     "precio": 1000,
@@ -63,7 +63,7 @@
   },
   {
     "id": "8",
-    "nombre": "q6100",
+    "nombre": "Q6100",
     "tipo": "Panorámica",
     "marca": "Axis",
     "precio": 1000,
@@ -72,7 +72,7 @@
   },
   {
     "id": "9",
-    "nombre": "m5525",
+    "nombre": "M5525",
     "tipo": "PTZ",
     "marca": "Axis",
     "precio": 1200,
@@ -81,7 +81,7 @@
   },
   {
     "id": "10",
-    "nombre": "p5655",
+    "nombre": "P5655",
     "tipo": "PTZ",
     "marca": "Axis",
     "precio": 1000,
@@ -90,7 +90,7 @@
   },
   {
     "id": "11",
-    "nombre": "q6075",
+    "nombre": "Q6075",
     "tipo": "PTZ",
     "marca": "Axis",
     "precio": 1000,
@@ -99,7 +99,7 @@
   },
   {
     "id": "12",
-    "nombre": "q6315",
+    "nombre": "Q6315",
     "tipo": "PTZ",
     "marca": "Axis",
     "precio": 1000,
@@ -108,7 +108,7 @@
   },
   {
     "id": "13",
-    "nombre": "p1290",
+    "nombre": "P1290",
     "tipo": "Térmica",
     "marca": "Axis",
     "precio": 1200,
@@ -117,7 +117,7 @@
   },
   {
     "id": "14",
-    "nombre": "q8641",
+    "nombre": "Q8641",
     "tipo": "Térmica",
     "marca": "Axis",
     "precio": 1000,
@@ -126,7 +126,7 @@
   },
   {
     "id": "15",
-    "nombre": "q8642",
+    "nombre": "Q8642",
     "tipo": "Térmica",
     "marca": "Axis",
     "precio": 1000,
@@ -135,7 +135,7 @@
   },
   {
     "id": "16",
-    "nombre": "q8741",
+    "nombre": "Q8741",
     "tipo": "Térmica",
     "marca": "Axis",
     "precio": 1000,

@@ -1,25 +1,23 @@
 import productos from "./main.js";
 import cargarProductos from "./cargaProductos.js";
 
-
 document.DOMContentLoaded = new Promise(function (resolve) {
 
-  if (document.readyState != "loading")
+    if (document.readyState != "loading"){
 
-    return resolve();
+        return resolve();
 
-  else
+    }else{
 
-    document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
 
-      return resolve();
+            return resolve();
 
-    });
+        });
+    }
 });
 
-  document.DOMContentLoaded.then(function () {
+document.DOMContentLoaded.then(function () {
     
-    cargarProductos(productos);
-
-        
+    cargarProductos(productos);   
 });

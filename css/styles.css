@@ -137,10 +137,11 @@ body {
   text-align: end; }
 
 .alienacionCarrito {
-  align-items: center;
   display: flex;
-  align-content: center;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
   width: 100%; }
 
 .logoCart {
@@ -149,9 +150,10 @@ body {
 
 .label {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: 50%;
-  align-items: center; }
+  width: 50%; }
   .label label {
     font-weight: 900; }
 
@@ -165,9 +167,10 @@ body {
 
 .agruparIconosCarrito {
   display: flex;
-  width: 30%;
+  justify-content: end;
   align-items: center;
-  justify-content: end; }
+  flex-direction: row;
+  width: 30%; }
 
 .botonPago {
   transform: translateY(-12px); }
@@ -192,9 +195,10 @@ body {
     width: 100%; }
     .productos .alineacionProductos .asideProductos {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
       width: 16%;
       background-color: black;
       color: black;
@@ -229,9 +233,10 @@ body {
           list-style: none; }
     .productos .alineacionProductos .contenedorFlex {
       display: flex;
-      width: 80%;
       justify-content: center;
       align-items: flex-start;
+      flex-direction: row;
+      width: 80%;
       flex-wrap: wrap; }
       .productos .alineacionProductos .contenedorFlex .item1 {
         display: flex;
@@ -256,11 +261,14 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: row;
           font-size: larger;
           width: 100%;
           border-bottom: 1px solid black;
           color: snow;
           background-color: black; }
+          .productos .alineacionProductos .contenedorFlex .item1 .datosBoton .textCard {
+            text-align: center; }
           .productos .alineacionProductos .contenedorFlex .item1 .datosBoton .botonRedondo {
             display: block;
             width: auto;
@@ -289,6 +297,12 @@ body {
 .search {
   display: flex;
   align-self: flex-end; }
+
+#videoIframe {
+  display: flex;
+  margin: 40px 0;
+  justify-content: center;
+  width: 100%; }
 
 .alineadorContacto {
   /* Contenedor Flex para mapas formulario y datos de dirección */
@@ -329,13 +343,13 @@ body {
 .AlineacionDatos {
   /* Contedor para título y parrafo en contacto.html */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   z-index: 0;
   transform: translateY(23px);
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  position: relative; }
   .AlineacionDatos h3 {
     width: fit-content; }
   .AlineacionDatos p {
@@ -500,43 +514,30 @@ body {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */ }
+  background-color: rgba(0, 0, 0, 0.4); }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */ }
+  width: 80%; }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold; }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer; }
@@ -601,22 +602,22 @@ body {
       width: 100%;
       justify-content: space-between; }
       .contenedorFactura .carritoFactura .alineaFinal .nombreContainer {
-        flex-direction: column;
         display: flex;
+        flex-direction: column;
         width: 33%;
         align-content: space-around;
         align-self: center;
         flex-wrap: wrap; }
       .contenedorFactura .carritoFactura .alineaFinal .cantidadContainer {
-        flex-direction: column;
         display: flex;
+        flex-direction: column;
         width: 33%;
         align-content: space-around;
         align-self: center;
         flex-wrap: wrap; }
       .contenedorFactura .carritoFactura .alineaFinal .precioContainer {
-        flex-direction: column;
         display: flex;
+        flex-direction: column;
         width: 33%;
         align-content: space-around;
         align-self: center;
@@ -779,7 +780,6 @@ body {
       text-align: center;
       color: #ffffff;
       position: relative;
-      /* height: 12vh; */
       z-index: 5;
       transform: translate(213px, 224px);
       font-size: larger;
@@ -925,10 +925,19 @@ body {
     transform: translate(10px, 123px); }
   .productos .alineacionProductos .contenedorFlex .item1 {
     width: 30%; }
-  .productos .alineacionProductos .asideProductos .search {
-    justify-content: center; }
-    .productos .alineacionProductos .asideProductos .search input {
-      width: 90%; } }
+    .productos .alineacionProductos .contenedorFlex .item1 .alineadorContenido .datosBoton .textCard {
+      font-size: 1rem; }
+  .productos .alineacionProductos .asideProductos {
+    width: 18%; }
+    .productos .alineacionProductos .asideProductos .search {
+      justify-content: center; }
+      .productos .alineacionProductos .asideProductos .search input {
+        width: 90%; }
+  .AlineacionDatos {
+    /* Contedor para título y parrafo en contacto.html */
+    transform: translateY(-56px); }
+  .mapaDatos p {
+    font-size: 15px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header .alineadorLogo h1 {
@@ -939,6 +948,14 @@ body {
     padding: 0 12px; }
   .header .alineacionBurger {
     width: 9%; }
+  .header .openbtn {
+    padding: 0px 0px 0 2px; }
+  .button {
+    padding: 4px 13px;
+    font-size: 0.7rem; }
+  .carrito .articulosCarrito .botonBin, .carritoDatos .articulosCarrito .botonBin {
+    width: 11%;
+    padding: 11px 6px; }
   .sliderEmpresa h2 {
     transform: none;
     margin-top: 15px; }
@@ -967,14 +984,26 @@ body {
     .productos .alineacionProductos .contenedorFlex .item1 {
       width: 33%;
       padding: 12px; }
+      .productos .alineacionProductos .contenedorFlex .item1 .alineadorContenido .datosBoton .textCard {
+        font-size: 1rem; }
   .productos .alineacionProductos .asideProductos {
-    width: 22%; }
+    width: 27%; }
     .productos .alineacionProductos .asideProductos .search {
       justify-content: center; }
       .productos .alineacionProductos .asideProductos .search input {
         width: 90%; }
+    .productos .alineacionProductos .asideProductos .filtro ul li {
+      margin: 5px 0 0 10px;
+      list-style: none; }
     .productos .alineacionProductos .asideProductos .filtro .sliderContainer {
-      width: 90%; } }
+      width: 90%; }
+  .AlineacionDatos {
+    /* Contedor para título y parrafo en contacto.html */
+    transform: translateY(-56px); }
+  .mapaDatos p {
+    font-size: 15px;
+    margin: 0.5rem 2.5rem;
+    text-align: center; } }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header {
@@ -1038,6 +1067,23 @@ body {
         left: 0; }
   .empresaID {
     height: 100px; }
+  .modal .modal-content {
+    margin: 25% auto;
+    padding: 21px;
+    width: 98%; }
+  .carrito .articulosCarrito .botonBin, .carritoDatos .articulosCarrito .botonBin {
+    width: 13%; }
+  .carrito h2, .carritoDatos h2 {
+    font-size: large; }
+  .carrito .articulosCarrito p, .carritoDatos .articulosCarrito p {
+    font-size: 15px; }
+  .carritoDatos p {
+    padding: 5px;
+    width: 85%;
+    font-size: 12px; }
+  .button {
+    padding: 0px 24px;
+    font-size: 0.6rem; }
   .sliderEmpresa {
     justify-content: center;
     flex-direction: column; }
@@ -1110,6 +1156,42 @@ body {
       .productos .alineacionProductos .contenedorFlex .item1 {
         width: 49%;
         padding: 12px; }
+  /* Formulario*/
+  .mapaContacto {
+    /* Class del div para organizar el iframe del mapa y datos en contacto.html */
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column; }
+  .flexContacto {
+    margin-bottom: 63px; }
+  .AlineacionDatos {
+    transform: translateY(61px); }
+  .mapaDatos p {
+    font-size: 15px;
+    margin: 0.5rem 6.5rem;
+    text-align: center; }
+  .fondoTexto {
+    width: 80%;
+    transform: translate(48px, 37px); }
+  .fondoTexto2 {
+    width: 90%;
+    transform: translate(41px, -25px); }
+  .formularioContacto {
+    width: 409px;
+    padding: 17px;
+    margin: 224px 0 150px 0; }
+    .formularioContacto input[type="text"] {
+      width: 171px;
+      margin: 15px 0 0 12px; }
+    .formularioContacto input[type="tel"], .formularioContacto input[type="email"] {
+      width: 171px;
+      margin: 5px 0 0 12px; }
+    .formularioContacto textarea {
+      width: 362px;
+      margin: 16px 0 0 8px; }
+    .formularioContacto button[type="submit"], .formularioContacto input[type="reset"] {
+      width: 93px;
+      margin: 14px 0 0 58px; }
   .contenedorMenuFooter .menuNavFooter {
     display: none;
     transition: 10.3s; }
@@ -1192,6 +1274,34 @@ body {
         left: 0; }
   .hero {
     display: none; }
+  .modal .modal-content {
+    margin: 45% auto;
+    padding: 21px;
+    width: 98%; }
+  .carrito .alienacionCarrito, .carritoDatos .alienacionCarrito {
+    flex-direction: column; }
+    .carrito .alienacionCarrito .logoCart, .carritoDatos .alienacionCarrito .logoCart {
+      width: 20%; }
+    .carrito .alienacionCarrito .agruparIconosCarrito, .carritoDatos .alienacionCarrito .agruparIconosCarrito {
+      width: 100%; }
+  .carrito .articulosCarrito .botonBin, .carritoDatos .articulosCarrito .botonBin {
+    width: 20%; }
+  .carrito .articulosCarrito p, .carritoDatos .articulosCarrito p {
+    font-size: 12px; }
+  .carrito h2, .carritoDatos h2 {
+    font-size: large;
+    margin-bottom: 23px; }
+  .carrito .articulosCarrito p, .carritoDatos .articulosCarrito p {
+    font-size: 12px; }
+  .carrito .titulosCarrito p, .carritoDatos .titulosCarrito p {
+    font-size: 12px; }
+  .carritoDatos p {
+    padding: 5px;
+    width: 85%;
+    font-size: 12px; }
+  .button {
+    padding: 8px 24px;
+    font-size: 8px; }
   .empresaID {
     height: 100px; }
   .sliderEmpresa {
@@ -1294,6 +1404,44 @@ body {
         width: 90%;
         padding: 12px;
         margin-top: 10px; }
+  /*Formulario*/
+  .mapaIframe iframe {
+    display: flex;
+    width: 90%; }
+  .mapaContacto {
+    /* Class del div para organizar el iframe del mapa y datos en contacto.html */
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column; }
+  .flexContacto {
+    margin-bottom: 63px; }
+  .AlineacionDatos {
+    transform: translateY(61px); }
+  .mapaDatos p {
+    font-size: 15px;
+    margin: 0.5rem 2.5rem;
+    text-align: center;
+    color: darkblue; }
+  .fondoTexto {
+    display: none; }
+  .fondoTexto2 {
+    display: none; }
+  .formularioContacto {
+    width: 230px;
+    padding: 7px;
+    margin: 104px 0 0px 0; }
+    .formularioContacto input[type="text"] {
+      width: 191px;
+      margin: 15px 0 0 12px; }
+    .formularioContacto input[type="tel"], .formularioContacto input[type="email"] {
+      width: 191px;
+      margin: 15px 0 0 12px; }
+    .formularioContacto textarea {
+      width: 199px;
+      margin: 36px 0 0 8px; }
+    .formularioContacto button[type="submit"], .formularioContacto input[type="reset"] {
+      width: 93px;
+      margin: 14px 0 0 58px; }
   .footerPrincipal {
     margin-top: 466px; }
     .footerPrincipal .footerAlineacion {
@@ -1321,7 +1469,10 @@ body {
   .burgerFooter.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg); }
   .burgerFooter.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg); } }
+    transform: translateY(-8px) rotate(-45deg); }
+  #videoIframe iframe {
+    width: 90%;
+    height: auto; } }
 
 @media screen and (max-width: 319px) {
   .header {
@@ -1391,6 +1542,34 @@ body {
     max-height: 140px; }
   .empresaID {
     height: 100px; }
+  .modal .modal-content {
+    margin: 45% auto;
+    padding: 21px;
+    width: 98%; }
+  .carrito .alienacionCarrito, .carritoDatos .alienacionCarrito {
+    flex-direction: column; }
+    .carrito .alienacionCarrito .logoCart, .carritoDatos .alienacionCarrito .logoCart {
+      width: 20%; }
+    .carrito .alienacionCarrito .agruparIconosCarrito, .carritoDatos .alienacionCarrito .agruparIconosCarrito {
+      width: 100%; }
+  .carrito .articulosCarrito .botonBin, .carritoDatos .articulosCarrito .botonBin {
+    width: 20%; }
+  .carrito .articulosCarrito p, .carritoDatos .articulosCarrito p {
+    font-size: 12px; }
+  .carrito h2, .carritoDatos h2 {
+    font-size: large;
+    margin-bottom: 23px; }
+  .carrito .articulosCarrito p, .carritoDatos .articulosCarrito p {
+    font-size: 12px; }
+  .carrito .titulosCarrito p, .carritoDatos .titulosCarrito p {
+    font-size: 12px; }
+  .carritoDatos p {
+    padding: 5px;
+    width: 85%;
+    font-size: 12px; }
+  .button {
+    padding: 8px 24px;
+    font-size: 8px; }
   .sliderEmpresa {
     justify-content: center;
     flex-direction: column; }
@@ -1492,6 +1671,44 @@ body {
         width: 90%;
         padding: 12px;
         margin-top: 10px; }
+  /*Formulario*/
+  .mapaIframe iframe {
+    display: flex;
+    width: 90%; }
+  .mapaContacto {
+    /* Class del div para organizar el iframe del mapa y datos en contacto.html */
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column; }
+  .flexContacto {
+    margin-bottom: 63px; }
+  .AlineacionDatos {
+    transform: translateY(61px); }
+  .mapaDatos p {
+    font-size: 15px;
+    margin: 0.5rem 2.5rem;
+    text-align: center;
+    color: darkblue; }
+  .fondoTexto {
+    display: none; }
+  .fondoTexto2 {
+    display: none; }
+  .formularioContacto {
+    width: 230px;
+    padding: 7px;
+    margin: 104px 0 0px 0; }
+    .formularioContacto input[type="text"] {
+      width: 191px;
+      margin: 15px 0 0 12px; }
+    .formularioContacto input[type="tel"], .formularioContacto input[type="email"] {
+      width: 191px;
+      margin: 15px 0 0 12px; }
+    .formularioContacto textarea {
+      width: 199px;
+      margin: 36px 0 0 8px; }
+    .formularioContacto button[type="submit"], .formularioContacto input[type="reset"] {
+      width: 93px;
+      margin: 14px 0 0 58px; }
   .footerPrincipal {
     margin-top: 466px; }
     .footerPrincipal .footerAlineacion {
@@ -1519,4 +1736,7 @@ body {
   .burgerFooter.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg); }
   .burgerFooter.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg); } }
+    transform: translateY(-8px) rotate(-45deg); }
+  #videoIframe iframe {
+    width: 90%;
+    height: auto; } }

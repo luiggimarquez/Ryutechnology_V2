@@ -12,23 +12,27 @@ class Datos{
 }//fin Class datos 
 let datos = new Datos;
 let temp = [];
+let timerInterval;
 
-let timerInterval
 Swal.fire({
-  title: 'Compra realizada satisfactoriamente',
-  html: 'A continuación tienes los datos de tu factura </br> Cierre automático en: <b></b> mseg.',
-  timer: 2500,
-  timerProgressBar: true,
-  didOpen: () => {
-    Swal.showLoading()
-    const b = Swal.getHtmlContainer().querySelector('b')
-    timerInterval = setInterval(() => {
-      b.textContent = Swal.getTimerLeft()
-    }, 100)
-  },
-  willClose: () => {
-    clearInterval(timerInterval)
-  }
+
+    title: 'Compra realizada satisfactoriamente',
+    html: 'A continuación tienes los datos de tu factura </br> Cierre automático en: <b></b> mseg.',
+    timer: 2500,
+    timerProgressBar: true,
+  
+    didOpen: () => {
+
+        Swal.showLoading()
+        const b = Swal.getHtmlContainer().querySelector('b')
+        timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft()
+        }, 100)
+    },
+
+    willClose: () => {
+        clearInterval(timerInterval)
+    }
 })
 
 //Carga de los datos del localStorage de la página Productos
@@ -41,14 +45,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
 cargados en el carrito de compras realizado en la pagina productos.HTML, guardados en el key= factura, que es una
 copia del contenido de Carrito, porque este último es borrado al efectuar el pago*/
 
-
-
 function recoveryData(temp2){
 
     datos=temp2;
     const DateTime = luxon.DateTime;
     const dt = DateTime.fromISO(new Date().toISOString());
-    
 
     let base =document.getElementById("contenedorFactura")
     base.innerHTML = `<div class="alineacionTituloFactura">
@@ -71,7 +72,6 @@ function recoveryData(temp2){
                                     <div id="carritoItems" class="alineaFinal"></div>
                                 </div>`;
     padre.insertAdjacentElement("beforeend", facturaImpresion);
-    
    
     let items = document.getElementById("carritoItems");
     let nombreContainer = document.createElement("div")

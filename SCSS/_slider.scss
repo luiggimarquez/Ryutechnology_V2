@@ -3,7 +3,6 @@
     display: none;
 }
 
-
 .img {
     
     vertical-align: middle;
@@ -14,7 +13,6 @@
     z-index: -10;
     transform: translateY(-173px);
     display: flex;
-    
 }
 
 .img2{
@@ -22,7 +20,6 @@
     display: flex;
     width: 100%;
 }
-
 
 .slideshow-container{
 
@@ -33,14 +30,11 @@
     transform: translateX(-9px);
 }
 
-
-
 .active {
 
   background-color: #000000;
 
 }
-
 
 .fade {
 
@@ -64,10 +58,15 @@
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    
+    from {
+        opacity: .4
+    }
 
+    to {
+        opacity: 1
+    }
+}
 
 .sliderEmpresa {
 
@@ -102,15 +101,11 @@
             text-align: center;
             color: #ffffff;
             position: relative;
-            /* height: 12vh; */
             z-index: 5;
             transform: translate(213px, 224px);
             font-size: larger;
             line-height: 25px;
         }
-
     }
-
-   
 }
 

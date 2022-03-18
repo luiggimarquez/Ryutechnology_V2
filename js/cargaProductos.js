@@ -1,7 +1,6 @@
 import imprimirCarrito from "./components/cart/imprimirCarrito.js";
 import pagoCarrito from "./components/cart/pagoCarrito.js"
-
-
+import cerrarModal from "./components/menu/modal.js"
 
 let carro=[];
 const containerProduct = document.getElementById('divProductos');
@@ -55,7 +54,7 @@ export default function cargarProductos(items) {
             
                     <img src="${img}" alt="">
                     <div class="datosBoton">
-                            <span>${nombre}</span>
+                            <span class=textCard>${nombre}</span>
                             <img src="../img/plus.png" class="botonRedondo" id="id${id}">
                     </div>
 
@@ -138,12 +137,14 @@ export function quitarArticulo2(dato,elementoRemover) { //elimina el articulo de
                
     imprimirCarrito(carro);
     pagoCarrito(carro);
+
+    (carro == "") && cerrarModal(); // IF ternario que cierra el modal cuando se borran manualmente todos los artículos
             
 };
 
 export function LimpiarCarro(contenidoCarrito){
 
-    carro=contenidoCarrito; //vacia el contenido de la variable cuando se procesa la compra
+    carro=contenidoCarrito; //vacía el contenido de la variable cuando se procesa la compra
 }
 
-export {carro}; 
+export {carro};

@@ -24,7 +24,7 @@ filtrado.addEventListener("change", () =>{
     input.value=""; /* el buscador por palabras es independinte al fitro por tipo y marca, cuando se presiona algún filtro, se borra la palabra buscada
     pero si se puede filtrar por algún checkbox y luego buscar alguna palabra, esto, el buscador filtra por el DOM*/
     
-  ((filtroUno.checked && filtroDos.checked && filtroTres.checked))&& (cargarProductos(productos)); 
+    ((filtroUno.checked && filtroDos.checked && filtroTres.checked))&& (cargarProductos(productos)); 
 
     let filtrados=[];
     let filtrados2=[];

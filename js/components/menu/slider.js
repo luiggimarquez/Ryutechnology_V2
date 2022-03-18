@@ -7,20 +7,18 @@ showSlides();
 function showSlides() {
   
     let i;
+    let slides = document.getElementsByClassName("mySlides");
 
-  let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
 
-  for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
-    slides[i].style.display = "none";
-  }
-
-  slideIndex++;
+    slideIndex++;
 
     if (slideIndex > slides.length){
       
-    slideIndex = 1
-
+        slideIndex = 1
     }    
   
   slides[slideIndex-1].style.display = "flex";  

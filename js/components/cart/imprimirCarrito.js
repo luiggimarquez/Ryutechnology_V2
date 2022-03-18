@@ -77,13 +77,30 @@ export default function imprimirCarrito(contenidoCarrito){
                 let vaciar = document.getElementById("vaciar");
                 vaciar.addEventListener("click",() =>{
 
-                    contenidoCarrito = vaciarCarrito(contenidoCarrito);
-                    //imprimirCarrito(contenidoCarrito);
-                    pagoCarrito(contenidoCarrito);
-                    load.LimpiarCarro(contenidoCarrito);
-                    cerrarModal();
+                    Swal.fire({
+                        title: 'Estás seguro? ',
+                        text: "Vaciarás el carrito",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Sí, deseo limpiarlo!'
+                    }).then((result) => {
 
+                        if (result.isConfirmed) {
 
+                            contenidoCarrito = vaciarCarrito(contenidoCarrito);
+                            pagoCarrito(contenidoCarrito);
+                            load.LimpiarCarro(contenidoCarrito);
+                            cerrarModal();
+
+                            Swal.fire(
+                                'Deleted!',
+                                'Tu carrito se ha vaciado totalmente',
+                                'success'
+                            )
+                        }
+                    })
                 });
                 
 

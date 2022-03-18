@@ -1,7 +1,5 @@
-
 let slider = document.getElementById("rango");
 let salida = document.getElementById("valor");
-
 
 
 const roundRange =  () => {
@@ -11,11 +9,9 @@ const roundRange =  () => {
     slider.oninput = function() {
         
         salida.innerHTML = this.value;
-       
     }
     
     return (slider.value)
-
 };
 
 export default roundRange;

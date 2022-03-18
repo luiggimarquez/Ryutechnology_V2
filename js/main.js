@@ -1,5 +1,3 @@
-
-
 let productos = [];
 let products = [];
 
@@ -25,13 +23,10 @@ class Producto{
     })
     .catch(error => console.error("error localizado"));
 
-
 products.forEach(elemento =>{
 
     let { id,nombre,tipo,marca,precio,cantidad,img } = elemento;
     productos[id-1] = new Producto( id, nombre, tipo, marca, precio, cantidad, img); 
 })
 
-
 export default productos;
-

@@ -1,11 +1,9 @@
-
 const filtradoBusqueda = () => {
 
     let input = document.getElementById("mySearch");
     
     input.addEventListener("keyup", (e) => {
 
-    
         let filter =input.value.toUpperCase();
         let div = document.querySelectorAll(".alineadorContenido");
         let div3 = document.querySelectorAll(".item1")
@@ -28,11 +26,9 @@ const filtradoBusqueda = () => {
                     
             }
             i++;
-
         }
-        
-    });
 
+    });
 }
 
 filtradoBusqueda();

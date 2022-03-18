@@ -18,3 +18,21 @@
     animation-duration: 1s;
     transition: 1s;
 }
+
+@mixin facturaContainer(){
+
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexConfiguracion1 ($display, $justify, $align, $direccion){
+
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direccion;
+}
