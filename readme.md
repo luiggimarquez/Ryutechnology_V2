@@ -1,13 +1,17 @@
 # Ryu Technology
 
 Este site es de una empresa dedicada al rubro tecnológico de la ingeniería de redes y su aplicación en el ámbito de comunicaciones, seguridad, automatización y domótica,
-tanto a nivel empresarial como en los hogares.
+tanto a nivel empresarial como en los hogares. Esta versión esta enfocada en productos para un ecommerce.
+
+![web principal](./img/imgreadme1.jpg)
+![web mobile](./img/imgreadme2.jpg)
+
 
 ## Comenzando 🚀
 
 Este es un proyecto público, puedes decargarte una copia desde la pestaña code o haciendo un Clone 😊
 
-Mira **Deployment** para conocer como luce el proyecto.
+Mira  [Deployment](https://luiggimarquez.github.io/Ryutechnology_V2/) para conocer como luce el proyecto.
 
 El proyecto está formado por 4 páginas:  index, productos, factura y contacto.
 
@@ -20,8 +24,12 @@ carpeta CSS (ver archivo package.json)
 Los archivos Javascript están en la carpeta JS, que se encuentra organizada asi:
 
     > Root: contiene los archivos principales:
+        - main.js: carga los archivos desde un JSON local
+        - app.js: llama a la funcion encargada de armar los productos en el inicio del DOM
+        - cargaProductos.js: escribe en el DOM los productos del ecommerce.
     
-    > _footers contiene los footers utilizados en las páginas.
+    > Components contiene los comoponentes de los archivos javascript usados para elaborar la lógica del funcionamiento:
+        - Cart: todos los componentes usados 2
     > _iniciales contiene los parámetros iniciales del proyecto.
     > _secciones contiene todo el contenido de todas las páginas.
 
@@ -34,6 +42,7 @@ Puedes utilizar Visual Studio Code o Sublime Text para revisarlo 🔧
 
 Estas instrucciones están hechas para Visual Studio Code, con el cual lo realicé:
 
+```
 * Instala **node.js** y **npm** desde https://nodejs.org/es/download/
 
 * En el Visual Studio Code úbicate en el directorio del proyecto
@@ -43,6 +52,8 @@ Estas instrucciones están hechas para Visual Studio Code, con el cual lo realic
 * Instala el nodemon con: **npm install -D node-sass nodemon**
 
 * Compila con npm: **run watch-css**
+
+```
 
 Si ya tienes instalado el node.js, ya están incluidos los files package.json y los .scss, puedes editar directamente los .scss 😊
 y solamente compilar el proyecto para comenzar.
@@ -75,7 +86,7 @@ y solamente compilar el proyecto para comenzar.
 
 Este proyecto fue realizado para las clases de JavaScript de CoderHouse por:
 
-**Ing. Luiggi Márquez** - [Profile](https://github.com/luiggimarquez) ✌️
+**Ing. Luiggi Márquez** - [Git Profile](https://github.com/luiggimarquez) ✌️
 
 Buenos Aires, Argentina 2022
 
