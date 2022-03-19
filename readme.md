@@ -43,7 +43,7 @@ Puedes utilizar Visual Studio Code o Sublime Text para revisarlo 🔧
 
 ### Instalación 
 
-Estas instrucciones están hechas para Visual Studio Code, con el cual lo realicé:
+Estas instrucciones están hechas para **Visual Studio Code**, con el cual lo realicé:
 
 
 * Instala **node.js** y **npm** desde https://nodejs.org/es/download/
@@ -52,9 +52,9 @@ Estas instrucciones están hechas para Visual Studio Code, con el cual lo realic
 
 * Inicia el `npm`, con `npm init` en TERMINAL (Ctrl + ñ)
 
-* Instala el `nodemon` con: **npm install -D node-sass nodemon**
+* Instala el **nodemon** con: `npm install -D node-sass nodemon`
 
-* Compila con npm: **run watch-css**
+* Compila con `npm run watch-css`
 
 
 
@@ -81,7 +81,7 @@ y solamente compilar el proyecto para comenzar.
 
 * El sitio es responsivo para los breakpoint 1200px, 1024px, 769px, 480px, 319px.
 
-* Se usó para las alertas SweetAlert2, https://sweetalert2.github.io/
+* Se usó para las alertas `SweetAlert2`, https://sweetalert2.github.io/
 
 
 
@@ -89,7 +89,7 @@ y solamente compilar el proyecto para comenzar.
 
 Este proyecto fue realizado para las clases de JavaScript de CoderHouse por:
 
-**Ing. Luiggi Márquez** - [Git Profile](https://github.com/luiggimarquez) ✌️
+**Ing. Luiggi Márquez** - [GitHub Profile](https://github.com/luiggimarquez) ✌️
 
 Buenos Aires, Argentina 2022
 
