@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 });
 
 /*La funcion RecoveryData toma los datos del localStorage e imprime de forma dinámica y automatica los elementos
-cargados en el carrito de compras realizado en la pagina productos.HTML, guardados en el key= factura, que es una
+cargados en el carrito de compras realizado en la pagina productos.HTML, guardados en el key = factura, que es una
 copia del contenido de Carrito, porque este último es borrado al efectuar el pago*/
 
 function recoveryData(temp2){
