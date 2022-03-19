@@ -28,10 +28,11 @@ Los archivos Javascript están en la carpeta JS, que se encuentra organizada asi
         - app.js: llama a la función encargada de armar los productos en el inicio del DOM
         - cargaProductos.js: escribe en el DOM los productos del e-commerce.
     
-    > Components folder: contiene los comoponentes de los archivos javascript usados para elaborar la lógica del funcionamiento:
+    > Components folder: contiene los componentes de los archivos javascript usados para elaborar la lógica del funcionamiento:
         - cart: posee todos los componentes usados para el desarrollo del carrito de compras (su lógica)
         - invoice: tiene la lógica para imprimir en elementos HTML la info de la factura
-        - menu: este folder contiene todos los componentes usados para los accesos y menus del sitio, como el modal del carrito, los menus burguer del responsive, el menu de busqueda, el menu del filtrado, el slider de imagen y el tab del index.
+        - menu: este folder contiene todos los componentes usados para los accesos y menus del sitio, como el modal del carrito,
+        los menus burguer del responsive, el menu de busqueda, el menu del filtrado, el slider de imagen y el tab del index.
 
     > Data folder: contiene el JSON que cumple la función de base datos del sitio.
 
@@ -44,7 +45,7 @@ Puedes utilizar Visual Studio Code o Sublime Text para revisarlo 🔧
 
 Estas instrucciones están hechas para Visual Studio Code, con el cual lo realicé:
 
-```
+
 * Instala **node.js** y **npm** desde https://nodejs.org/es/download/
 
 * En el Visual Studio Code úbicate en el directorio del proyecto
@@ -55,7 +56,7 @@ Estas instrucciones están hechas para Visual Studio Code, con el cual lo realic
 
 * Compila con npm: **run watch-css**
 
-```
+
 
 Si ya tienes instalado el node.js, ya están incluidos los files package.json y los .scss, puedes editar directamente los .scss 😊
 y solamente compilar el proyecto para comenzar.
