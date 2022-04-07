@@ -546,7 +546,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
   padding-top: 38px; }
 
 .contenedorFactura {
